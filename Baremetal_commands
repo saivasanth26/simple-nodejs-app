@@ -1,0 +1,9 @@
+// build step - Execute shell commands
+
+
+sudo apt-get install nodejs npm -y
+sudo npm install
+sudo npm start
+
+
+// it runs in foreground pipline is not possible in this 
