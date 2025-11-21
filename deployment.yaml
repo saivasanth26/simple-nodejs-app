@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: monitorapp
+  name: nodeapp
   labels:
-    app: monitorapp
+    app: nodeapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: monitorapp
+      app: nodeapp
   template:
     metadata:
       labels:
-        app: monitorapp
+        app: nodeapp
     spec:
       containers:
-      - name: monitorapp
+      - name: nodeapp
         image: dvasanth26/nodeapp:v1
         ports:
         - containerPort: 3000
